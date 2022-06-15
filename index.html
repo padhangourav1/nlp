@@ -1,29 +1,12 @@
-<!DOCTYPE html>
-<html>
-<title>Audio Recorder Example</title>
-<head>
-
-</head>
-
-<body style="background-color:rgb(101, 185, 17); ">
-<header>
-	<h1>Record and Play Audio in JavaScript</h1>
-</header>
-<!--button for 'start recording'-->
-<p>
-	<button id="btnStart">START RECORDING</button>
-		&nbsp;&nbsp;&nbsp;&nbsp;
-	<button id="btnStop">STOP RECORDING</button>
-	<!--button for 'stop recording'-->
-</p>
-
-<!--for record-->
-<audio controls></audio>
-<!--'controls' use for add
-	play, pause, and volume-->
-
-<!--for play the audio-->
-<audio id="audioPlay" controls></audio>
-</body>
-
-</html>
+<meta charset="UTF-8">
+<title>Simple Recorder.js demo with record, stop and pause</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div id="controls">
+    <button id="recordButton">Record</button>
+    <button id="pauseButton" disabled>Pause</button>
+    <button id="stopButton" disabled>Stop</button>
+</div>
+<h3>Recordings</h3>
+<ol id="recordingsList"></ol>
+<!-- inserting these scripts at the end to be able to use all the elements in the DOM --> 
+<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
